@@ -1,4 +1,5 @@
-import os, csv
+import os
+import csv
 import sys
 
 # open a csv with the keywords to search for
@@ -222,10 +223,15 @@ def dataDictionary_toCSV(spliceContents, save_file_path):
     return out_path
 
 
+
+
+
+
 # Code for the desktop display
 
 import tkinter as tk
 from tkinter import filedialog
+from tkinter import ttk
 import platform
 
 version_number = 1.0
@@ -236,9 +242,6 @@ if platform.system() == "Windows":
     save_file_path_global = os.path.join(os.environ["USERPROFILE"], "Downloads")
 else:
     save_file_path_global = None
-
-
-
 
 def select_file_location():
     # set the default file folder
@@ -290,31 +293,37 @@ def select_directory_for_download():
 
 
 def run_on_click_button():
-    
-
-    # # execute the code
+    # execute the code
     keywords = getKeyWords()
     data = spliceData(keywords,readData(fetch_file_path_global))
     savedFileName = dataDictionary_toCSV(data, save_file_path_global)
     statusLabel.config(text = f"Converter Ran Sucessfully. File Saved as: {savedFileName}")
 
+
+#base window stuff
 root = tk.Tk()
 root.title("Trane Trace Converter" + " " + str(version_number))
 root.geometry("1000x400")
 
 
-select_frame = tk.Frame(root)
+# container for tabs
+programWin = ttk.Notebook(root)
+programWin.pack(fill="both", expand=True)
+
+#first tab Main Progam
+mainPage = tk.Frame(programWin)
+mainPage.grid_columnconfigure(0, weight=1) # center on page
+programWin.add(mainPage, text="Main Program") # add to tab container
+
+#make frames for text
+select_frame = tk.Frame(mainPage)
 select_frame.grid(row=0, column=0, padx=5, pady=5)
-
-save_frame = tk.Frame(root)
+save_frame = tk.Frame(mainPage)
 save_frame.grid(row=1, column=0, padx=5, pady=5)
-
-run_frame = tk.Frame(root)
+run_frame = tk.Frame(mainPage)
 run_frame.grid(row=2, column=0, padx=5, pady=5)
 
-root.grid_columnconfigure(0, weight=1)
-
-
+#add text and buttons
 fileLabel = tk.Label(select_frame, text = f"Selected File: {fetch_file_path_global}")
 fileLabel.grid(row=0, column=0, padx=10, pady=10)
 select_file_button = tk.Button(select_frame, text="Select File", command = select_file_location)
@@ -325,10 +334,22 @@ saveLocationLabel.grid(row=0, column=0, padx=10, pady=10)
 select_file_button = tk.Button(save_frame, text="Change Save Location", command = select_directory_for_download)
 select_file_button.grid(row=1, column=0, padx=10, pady=5)
 
-
 statusLabel = tk.Label(run_frame, text = "No file selected to run converter on.")
 statusLabel.grid(row=2, column=0, padx=5, pady=10)
 run_on_click_button = tk.Button(run_frame, text="Run Converter", command = run_on_click_button)
 run_on_click_button.grid(row=2, column=1, padx=5, pady=10)
 
+# seccond tab Keywords Page
+keywordsPage = tk.Frame(programWin)
+keywordsPage.grid_columnconfigure(0, weight=1) # center on page
+programWin.add(keywordsPage, text="Keywords Page")
+
+
+
+
+
+
+
+
+# run the program
 root.mainloop()
