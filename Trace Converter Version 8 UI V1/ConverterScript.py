@@ -4,16 +4,18 @@ import sys
 
 # open a csv with the keywords to search for
 def resource_path(fileName):
-        """ Get absolute path to resource, works for dev and for PyInstaller """
-        try:
-            # PyInstaller creates a temp folder and stores path in `_MEIPASS`
-            base_path = sys._MEIPASS
-        except Exception:
-            base_path = os.path.abspath(".")
+    """ Get absolute path to the file, looking in the directory of the executable """
+    if getattr(sys, 'frozen', False):
+        # If the application is compiled with PyInstaller, get the directory of the executable
+        base_path = os.path.dirname(sys.executable)
+    else:
+        # Otherwise, use the directory of the script
+        base_path = os.path.abspath(os.path.dirname(__file__))
 
-        return os.path.join(base_path, fileName)
+    return os.path.join(base_path, fileName)
+
 def getKeyWords():
-    # Check if the CSV file exists in the bundled environment
+    # Check if the CSV file exists in the directory with the executable
     csv_file_name = "Keywords.csv"
     target_path = resource_path(csv_file_name)
 
@@ -26,7 +28,7 @@ def getKeyWords():
 
     inputkeywords = contents[0].strip("\n").split(",")
     outputKeywords = contents[1].strip("\n").split(",")
-    return (inputkeywords,outputKeywords)
+    return (inputkeywords, outputKeywords)
 
 # read all of the trace data
 def readData(filename):
