@@ -3,8 +3,7 @@ import csv
 import sys
 
 # open a csv with the keywords to search for
-def getKeyWords():
-    def resource_path(relative_path):
+def resource_path(relative_path):
         """ Get absolute path to resource, works for dev and for PyInstaller """
         try:
             # PyInstaller creates a temp folder and stores path in `_MEIPASS`
@@ -13,7 +12,7 @@ def getKeyWords():
             base_path = os.path.abspath(".")
 
         return os.path.join(base_path, relative_path)
-
+def getKeyWords():
     # Check if the CSV file exists in the bundled environment
     csv_file_name = "Keywords.csv"
     target_path = resource_path(csv_file_name)
@@ -344,6 +343,62 @@ keywordsPage = tk.Frame(programWin)
 keywordsPage.grid_columnconfigure(0, weight=1) # center on page
 programWin.add(keywordsPage, text="Keywords Page")
 
+
+def load_csv():
+    csv_file_name = "Keywords.csv"
+    target_path = resource_path(csv_file_name)
+    
+    if not os.path.isfile(target_path):
+        raise FileNotFoundError(f"{csv_file_name} not found at {target_path}")
+
+    with open(target_path, "r") as file:
+        reader = csv.reader(file)
+        rows = list(reader)
+    
+    return rows
+
+def save_csv(rows):
+    csv_file_name = "Keywords.csv"
+    target_path = resource_path(csv_file_name)
+    
+    with open(target_path, "w", newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(rows)
+    
+    tk.messagebox.showinfo("Info", "Data saved successfully!")
+
+def on_save():
+    # Collect data from Treeview
+    rows = []
+    for row_id in tree.get_children():
+        row = [tree.item(row_id, 'values')[i] for i in range(len(headers))]
+        rows.append(row)
+    
+    save_csv(rows)
+
+
+
+# Create a Treeview widget
+tree = ttk.Treeview(keywordsPage, columns=("Column 1", "Column 2"), show='headings', selectmode='none')
+tree.pack(expand=True, fill='both')
+
+# Define columns
+headers = ["Column 1", "Column 2"]
+for header in headers:
+    tree.heading(header, text=header)
+    tree.column(header, width=100, anchor='center')
+
+# Load data into Treeview
+try:
+    rows = load_csv()
+    for row in rows:
+        tree.insert("", tk.END, values=row)
+except FileNotFoundError as e:
+    tk.messagebox.showerror("Error", str(e))
+
+# Add Save button
+save_button = tk.Button(keywordsPage, text="Save", command=on_save)
+save_button.pack(pady=10)
 
 
 
