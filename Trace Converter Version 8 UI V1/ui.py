@@ -1,17 +1,45 @@
 import os, csv
+import sys
 
 # open a csv with the keywords to search for
 def getKeyWords():
-    assert "Keywords.csv" in os.listdir(os.path.dirname(__file__)), errorReport("Keyword File")   # check to make sure keywords file is there
+    def resource_path(relative_path):
+        """ Get absolute path to resource, works for dev and for PyInstaller """
+        try:
+            # PyInstaller creates a temp folder and stores path in `_MEIPASS`
+            base_path = sys._MEIPASS
+        except Exception:
+            base_path = os.path.abspath(".")
 
-    #Keywords.csv file should have first row as the keywords to search for, separated by commas, second row should have the words the data maps to
-    target_path = os.path.join(os.path.dirname(__file__), "Keywords.csv")
+        return os.path.join(base_path, relative_path)
+
+    # Check if the CSV file exists in the bundled environment
+    csv_file_name = "Keywords.csv"
+    target_path = resource_path(csv_file_name)
+
+    if not os.path.isfile(target_path):
+        raise FileNotFoundError(f"{csv_file_name} not found at {target_path}")
+
+    # Read the contents of the CSV file
     with open(target_path, "r") as the_file:
         contents = the_file.readlines()
 
     inputkeywords = contents[0].strip("\n").split(",")
     outputKeywords = contents[1].strip("\n").split(",")
     return (inputkeywords,outputKeywords)
+
+# # open a csv with the keywords to search for
+# def getKeyWords():
+#     assert "Keywords.csv" in os.listdir(os.path.dirname(__file__)), errorReport("Keyword File")   # check to make sure keywords file is there
+
+#     #Keywords.csv file should have first row as the keywords to search for, separated by commas, second row should have the words the data maps to
+#     target_path = os.path.join(os.path.dirname(__file__), "Keywords.csv")
+#     with open(target_path, "r") as the_file:
+#         contents = the_file.readlines()
+
+#     inputkeywords = contents[0].strip("\n").split(",")
+#     outputKeywords = contents[1].strip("\n").split(",")
+#     return (inputkeywords,outputKeywords)
 
 # read all of the trace data
 def readData(filename):

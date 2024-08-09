@@ -1,0 +1,65 @@
+('C:\\Users\\techn\\Desktop\\Code\\New '
+ 'folder\\TraneTrace3D-csv-export-extractor\\Trace Converter Version 8 UI '
+ 'V1\\build\\ui\\ui.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\techn\\Desktop\\Code\\New '
+   'folder\\TraneTrace3D-csv-export-extractor\\Trace Converter Version 8 UI '
+   'V1\\build\\ui\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\techn\\Desktop\\Code\\New '
+   'folder\\TraneTrace3D-csv-export-extractor\\Trace Converter Version 8 UI '
+   'V1\\build\\ui\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\techn\\Desktop\\Code\\New '
+   'folder\\TraneTrace3D-csv-export-extractor\\Trace Converter Version 8 UI '
+   'V1\\build\\ui\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\techn\\Desktop\\Code\\New '
+   'folder\\TraneTrace3D-csv-export-extractor\\Trace Converter Version 8 UI '
+   'V1\\build\\ui\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\techn\\Desktop\\Code\\New '
+   'folder\\TraneTrace3D-csv-export-extractor\\Trace Converter Version 8 UI '
+   'V1\\build\\ui\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\techn\\Desktop\\Code\\New '
+   'folder\\TraneTrace3D-csv-export-extractor\\Trace Converter Version 8 UI '
+   'V1\\build\\ui\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Users\\techn\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\techn\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth__tkinter',
+   'C:\\Users\\techn\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth__tkinter.py',
+   'PYSOURCE'),
+  ('ui',
+   'C:\\Users\\techn\\Desktop\\Code\\New '
+   'folder\\TraneTrace3D-csv-export-extractor\\Trace Converter Version 8 UI '
+   'V1\\ui.py',
+   'PYSOURCE')],
+ 'python311.dll',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
