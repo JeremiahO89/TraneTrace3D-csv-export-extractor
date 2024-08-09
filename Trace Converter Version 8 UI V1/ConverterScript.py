@@ -319,5 +319,43 @@ keywordsPage = tk.Frame(programWin)
 keywordsPage.grid_columnconfigure(0, weight=1) # center on page
 programWin.add(keywordsPage, text="Keywords Page")
 
+# open the keyword file
+
+def loadKeywords():
+    keywords = getKeyWords()
+    keywords = [keywords[0], keywords[1]]
+    textboxes = []
+    for row, values in enumerate(keywords):
+        row_boxes = []
+        for col, value in enumerate(values):
+            entry = tk.Entry(root)
+            entry.insert(0, value)  # Pre-fill the text box
+            entry.grid(row=row, column=col, padx=5, pady=5)
+            row_boxes.append(entry)
+        textboxes.append(row_boxes)
+
+
+
+    # def save_data():
+    #         saved_data = []
+    #         for row in textboxes:
+    #             row_values = [box.get() for box in row]
+    #             saved_data.append(row_values)
+    #         print(saved_data)  # Replace with your desired saving logic
+
+    # save_button = tk.Button(root, text="Save Data", command=save_data)
+    # save_button.grid(row=len(data), column=0, columnspan=len(data[0]), pady=10)    textboxes.append(row_boxes)
+
+
+loadKeywordsButton = tk.Button(keywordsPage, text="Load Keywords", command = loadKeywords())
+loadKeywordsButton.grid(row=0, column=0, columnspan=len(getKeyWords()[0]), pady=10)
+
+
+
+
+
+
+
+
 # run the program
 root.mainloop()
