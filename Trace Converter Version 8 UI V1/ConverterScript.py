@@ -3,7 +3,7 @@ import csv
 import sys
 
 # open a csv with the keywords to search for
-def resource_path(relative_path):
+def resource_path(fileName):
         """ Get absolute path to resource, works for dev and for PyInstaller """
         try:
             # PyInstaller creates a temp folder and stores path in `_MEIPASS`
@@ -11,7 +11,7 @@ def resource_path(relative_path):
         except Exception:
             base_path = os.path.abspath(".")
 
-        return os.path.join(base_path, relative_path)
+        return os.path.join(base_path, fileName)
 def getKeyWords():
     # Check if the CSV file exists in the bundled environment
     csv_file_name = "Keywords.csv"
@@ -27,19 +27,6 @@ def getKeyWords():
     inputkeywords = contents[0].strip("\n").split(",")
     outputKeywords = contents[1].strip("\n").split(",")
     return (inputkeywords,outputKeywords)
-
-# # open a csv with the keywords to search for
-# def getKeyWords():
-#     assert "Keywords.csv" in os.listdir(os.path.dirname(__file__)), errorReport("Keyword File")   # check to make sure keywords file is there
-
-#     #Keywords.csv file should have first row as the keywords to search for, separated by commas, second row should have the words the data maps to
-#     target_path = os.path.join(os.path.dirname(__file__), "Keywords.csv")
-#     with open(target_path, "r") as the_file:
-#         contents = the_file.readlines()
-
-#     inputkeywords = contents[0].strip("\n").split(",")
-#     outputKeywords = contents[1].strip("\n").split(",")
-#     return (inputkeywords,outputKeywords)
 
 # read all of the trace data
 def readData(filename):
@@ -109,12 +96,6 @@ def spliceData(keywords, fileContents):
     allDataByArea = {}  # dict to store the data
     currentArea= None   # string with current spot in allDataByArea
     room_or_zone = True # true if a room file, false if a zone file
-        
-    # out_path = os.path.join(os.path.dirname(__file__), 'List.txt')
-    # with open(out_path, 'w') as out_file:
-    #     for line in fileContents:
-    #         data = cleanLine(line)
-    #         out_file.write(f"{data}\n")
 
     for line in fileContents:
         data = cleanLine(line)
@@ -144,7 +125,7 @@ def spliceData(keywords, fileContents):
                     allDataByArea[currentArea]['Latent Heating'] = data[data_pos + 3]
                     allDataByArea[currentArea]['Total Heating Load'] = data[data_pos + 4]
 
-        else: # get the other data
+        else: # get the other data labled in the keywords.csv file
             for key_pos in range(2,len(inputkeywords)):    
                 for data_pos in range(len(data)):
                     if inputkeywords[key_pos] in data[data_pos]:
@@ -169,12 +150,10 @@ def setUpNewArea(dic,room, keys):
 
 # write the dictionary to a CSV
 def dataDictionary_toCSV(spliceContents, save_file_path):
-
     # inputkeywords = keywords[0]
     # outputkeywords = keywords[1]
     dic = spliceContents [0]
     room_or_zone = spliceContents[1]
-
 
     if room_or_zone: 
         fileName = 'Room Load Summary.csv'
@@ -188,9 +167,6 @@ def dataDictionary_toCSV(spliceContents, save_file_path):
     headerList += list(dic[firstRoom].keys())
     header = ','.join(headerList)
 
-
-
-    
     # make a unique output file (checks if the file already exits)
     out_path = os.path.join(save_file_path, fileName)    # file to write output data
     counter = 1
@@ -208,7 +184,6 @@ def dataDictionary_toCSV(spliceContents, save_file_path):
 
     with open(out_path, 'w') as out_file:
         out_file.write(header + "\n")
-
         for key in dic: # for every room in the dictionary write its data to the output file
             file_string = ""
             file_string += (str(key) + ",")
@@ -218,7 +193,6 @@ def dataDictionary_toCSV(spliceContents, save_file_path):
                 file_string += (str(dic[key][keyword]) + ",")
 
             out_file.write(f"{file_string}\n")
-    
     return out_path
 
 
@@ -342,69 +316,6 @@ run_on_click_button.grid(row=2, column=1, padx=5, pady=10)
 keywordsPage = tk.Frame(programWin)
 keywordsPage.grid_columnconfigure(0, weight=1) # center on page
 programWin.add(keywordsPage, text="Keywords Page")
-
-
-def load_csv():
-    csv_file_name = "Keywords.csv"
-    target_path = resource_path(csv_file_name)
-    
-    if not os.path.isfile(target_path):
-        raise FileNotFoundError(f"{csv_file_name} not found at {target_path}")
-
-    with open(target_path, "r") as file:
-        reader = csv.reader(file)
-        rows = list(reader)
-    
-    return rows
-
-def save_csv(rows):
-    csv_file_name = "Keywords.csv"
-    target_path = resource_path(csv_file_name)
-    
-    with open(target_path, "w", newline='') as file:
-        writer = csv.writer(file)
-        writer.writerows(rows)
-    
-    tk.messagebox.showinfo("Info", "Data saved successfully!")
-
-def on_save():
-    # Collect data from Treeview
-    rows = []
-    for row_id in tree.get_children():
-        row = [tree.item(row_id, 'values')[i] for i in range(len(headers))]
-        rows.append(row)
-    
-    save_csv(rows)
-
-
-
-# Create a Treeview widget
-tree = ttk.Treeview(keywordsPage, columns=("Column 1", "Column 2"), show='headings', selectmode='none')
-tree.pack(expand=True, fill='both')
-
-# Define columns
-headers = ["Column 1", "Column 2"]
-for header in headers:
-    tree.heading(header, text=header)
-    tree.column(header, width=100, anchor='center')
-
-# Load data into Treeview
-try:
-    rows = load_csv()
-    for row in rows:
-        tree.insert("", tk.END, values=row)
-except FileNotFoundError as e:
-    tk.messagebox.showerror("Error", str(e))
-
-# Add Save button
-save_button = tk.Button(keywordsPage, text="Save", command=on_save)
-save_button.pack(pady=10)
-
-
-
-
-
-
 
 # run the program
 root.mainloop()
