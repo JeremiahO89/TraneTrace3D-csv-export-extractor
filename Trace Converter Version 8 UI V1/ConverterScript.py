@@ -314,48 +314,98 @@ statusLabel.grid(row=2, column=0, padx=5, pady=10)
 run_on_click_button = tk.Button(run_frame, text="Run Converter", command = run_on_click_button)
 run_on_click_button.grid(row=2, column=1, padx=5, pady=10)
 
+
+
 # seccond tab Keywords Page
 keywordsPage = tk.Frame(programWin)
 keywordsPage.grid_columnconfigure(0, weight=1) # center on page
 programWin.add(keywordsPage, text="Keywords Page")
 
-# open the keyword file
+excelChart = tk.Frame(keywordsPage)
+excelChart.grid_columnconfigure(0, weight=1) # center on page
+excelChart.grid(row=1, column=0, padx=5, pady=5)
 
-def loadKeywords():
+keywordButtons = tk.Frame(keywordsPage)
+keywordButtons.grid_columnconfigure(0, weight=1) # center on page
+keywordButtons.grid(row=3, column=0, padx=5, pady=5)
+
+
+
+keywordData = [] # is a blank list at the start
+
+def loadSavedKeywords():
+    global keywordData
     keywords = getKeyWords()
-    keywords = [keywords[0], keywords[1]]
-    textboxes = []
-    for row, values in enumerate(keywords):
-        row_boxes = []
-        for col, value in enumerate(values):
-            entry = tk.Entry(root)
-            entry.insert(0, value)  # Pre-fill the text box
-            entry.grid(row=row, column=col, padx=5, pady=5)
-            row_boxes.append(entry)
-        textboxes.append(row_boxes)
+    keywordData = [keywords[0], keywords[1]]
+    updateKeywords()
+    statusLabel.config(text = f"File Loaded")
+    
 
+def updateKeywords():
+    # Clear any existing widgets in the frame
+    for widget in excelChart.winfo_children():
+        widget.destroy()
 
+    global keywordData
+    for r, row in enumerate(keywordData):
+        for c, val in enumerate(row):
+            entry = tk.Entry(excelChart, width=max(len(val), 15))  # Set initial width based on text length
+            entry.grid(row=r, column=c, padx=3, pady=3, sticky="nsew")  # Add buffer and center the text box
+            entry.insert(tk.END, val)
 
-    # def save_data():
-    #         saved_data = []
-    #         for row in textboxes:
-    #             row_values = [box.get() for box in row]
-    #             saved_data.append(row_values)
-    #         print(saved_data)  # Replace with your desired saving logic
+            # Bind the event to dynamically adjust width
+            entry.bind("<KeyRelease>", lambda event, e=entry: adjust_width(e))
 
-    # save_button = tk.Button(root, text="Save Data", command=save_data)
-    # save_button.grid(row=len(data), column=0, columnspan=len(data[0]), pady=10)    textboxes.append(row_boxes)
+def adjust_width(entry):
+    # Adjust the width of the Entry widget based on the length of its content
+    content = entry.get()
+    new_width = max(len(content), 15)  # Ensure a minimum width
+    entry.config(width=new_width)
 
+def add_column():
+    global keywordData
+    for row in keywordData:
+        row.append("None")
+    updateKeywords()
+    
+def remove_column():
+    global keywordData
+    for row in keywordData:
+        if len(row) != 0:
+            row.pop()        
+    updateKeywords()
+    
+def saveKeywords():
+    global keywordData
+    csv_file_name = "Keywords.csv"
+    target_path = resource_path(csv_file_name)
 
-loadKeywordsButton = tk.Button(keywordsPage, text="Load Keywords", command = loadKeywords())
-loadKeywordsButton.grid(row=0, column=0, columnspan=len(getKeyWords()[0]), pady=10)
+    if not os.path.isfile(target_path):
+        raise FileNotFoundError(f"{csv_file_name} not found at {target_path}")
 
+    # Read the contents of the CSV file
+    with open(target_path, "w") as out_file:
+        out_file.write(",".join(keywordData[0]) + "\n")
+        out_file.write(",".join(keywordData[1]) + "\n")
+    
+    statusLabel.config(text = f"Keywords saved to file.")
+    
 
+loadKeywordsButton = tk.Button(keywordButtons, text="Load Saved Keywords", command = loadSavedKeywords)
+loadKeywordsButton.grid(row=3, column=0, padx=5, pady=5)
 
+# Add the button to add another column
+add_column_button = tk.Button(keywordButtons, text="Add Column", command = add_column)
+add_column_button.grid(row=3, column=1, padx=5, pady=5)
 
+remove_column_button = tk.Button(keywordButtons, text="Remove Column", command = remove_column)
+remove_column_button.grid(row=3, column=2, padx=5, pady=5)
 
+save_button = tk.Button(keywordButtons, text="Save Keywords", command = saveKeywords)
+save_button.grid(row=3, column=4, padx=5, pady=5)
 
-
+statusLabel = tk.Label(keywordsPage, text = "")
+statusLabel.grid(row=5, column=0, padx=5, pady=10)
 
 # run the program
 root.mainloop()
