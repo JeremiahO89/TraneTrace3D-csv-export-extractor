@@ -206,6 +206,7 @@ def dataDictionary_toCSV(spliceContents, save_file_path):
 
 import tkinter as tk
 from tkinter import filedialog
+from tkinter import font as tkFont
 from tkinter import ttk
 import platform
 
@@ -278,14 +279,53 @@ def run_on_click_button():
 #base window stuff
 root = tk.Tk()
 root.title("Trane Trace Converter" + " " + str(version_number))
-root.geometry("1000x400")
-
+root.geometry("1200x800")
 
 # container for tabs
 programWin = ttk.Notebook(root)
 programWin.pack(fill="both", expand=True)
 
-#first tab Main Progam
+#first tab operion details
+howToPage = tk.Frame(programWin)
+programWin.add(howToPage, text="Operation Details")  # Add to tab container
+
+aboutMeText = """
+Operation Details:
+    - Select the .csv Trane Trace file you are trying to clean.
+    - The Trane Trace file can be either a Room Summary, or a Zone Summary file.
+    - Select a location to save the cleaned file too, the default is your Downloads folder.
+    - Click "Run Converter". 
+    - A file named "Room Load Summary.csv" or "Zone Load Summery.csv" should appear in the selected save location.
+    
+    You are now done and can open this file with excel.
+
+Additional Notes:
+    If you are noticing that the values in the cleaned file don't match what they should:
+    Click on the "Keywords Page" (at the top) and check that the "Words to search for:" row has keywords that match the values you are searching for in the Trace.csv file.
+    When trace does updates they can change the words in their export files. For example "Number of People" changed to “No People (max)” in one of the updates. If you notice that the keyword is different from the value you want, change that word and save the file.
+    If there are other keywords you would like to clean, you can add them or remove them.
+    The second row ("Map words to label:") is the header you would like for that keyword to map to in the new file. These CAN NOT be blank or identical.
+    You must SAVE before running after making any changes.
+
+Other notes:
+    The "Keywords.csv" file must be in the same folder as the Trance Trace Program.exe file. This is where the keywords are stored for future use. You can also edit the keywords here with excel instead of using the Keywords page.
+
+If any other problems arise, send an email to jjo5541@psu.edu with the trace file you are trying to clean, a zip of the Trace Trace Export Converter program with the "Keywords.csv" file you are using.
+Created By: Jeremiah J Ondrasik (8/12/2024)
+"""
+
+textScrollbar = tk.Scrollbar(howToPage, orient="vertical")
+textScrollbar.pack(side="right", fill="y")
+
+textWidget = tk.Text(howToPage, wrap=tk.WORD, yscrollcommand=textScrollbar.set, font=tkFont.Font(family="Arial", size=10))  # Wrap words and bind scrollbar
+textWidget.insert(tk.END, aboutMeText)
+textWidget.pack(fill="both", expand=True)  # Fill container and allow expansion
+textWidget.config(state=tk.DISABLED)  # Disable editing
+textScrollbar.config(command=textWidget.yview)  # Link scrollbar to text widget
+
+
+
+#seccond tab Main Progam
 mainPage = tk.Frame(programWin)
 mainPage.grid_columnconfigure(0, weight=1) # center on page
 programWin.add(mainPage, text="Main Program") # add to tab container
@@ -316,7 +356,7 @@ run_on_click_button.grid(row=2, column=1, padx=5, pady=10)
 
 
 
-# seccond tab Keywords Page
+# third tab Keywords Page
 keywordsPage = tk.Frame(programWin)
 keywordsPage.grid_columnconfigure(0, weight=1) # center on page
 programWin.add(keywordsPage, text="Keywords Page")
