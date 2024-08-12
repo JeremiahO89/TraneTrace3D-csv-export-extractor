@@ -317,9 +317,27 @@ run_on_click_button.grid(row=2, column=1, padx=5, pady=10)
 
 
 # seccond tab Keywords Page
-keywordsPage = tk.Frame(programWin)
+keywordsPageMaster = tk.Frame(programWin)
+keywordsPageMaster.grid_columnconfigure(0, weight=1) # center on page
+programWin.add(keywordsPageMaster, text="Keywords Page")
+
+scrollCanvas = tk.Canvas(root)
+h_scrollbar = tk.Scrollbar(keywordsPageMaster, orient = "horizontal", command = scrollCanvas.xview)
+scrollCanvas.configure(xscrollcommand=h_scrollbar.set)
+
+scrollCanvas.pack(side = "top", fill="both", expand=True)
+h_scrollbar.pack(side = "bottom", fill = "x")
+
+
+
+
+
+keywordsPage = tk.Frame(scrollCanvas)
+scrollCanvas.create_window((0,0), window=keywordsPage, anchor="nw")
+keywordsPage.bind("<Configure>", lambda event, canvas=scrollCanvas: on_frame_configure(scrollCanvas))
+
 keywordsPage.grid_columnconfigure(0, weight=1) # center on page
-programWin.add(keywordsPage, text="Keywords Page")
+keywordsPageMaster.add(keywordsPage, text="Keywords Page")
 
 excelChart = tk.Frame(keywordsPage)
 excelChart.grid_columnconfigure(0, weight=1) # center on page
