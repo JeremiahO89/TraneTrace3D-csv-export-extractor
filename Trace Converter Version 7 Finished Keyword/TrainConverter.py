@@ -84,7 +84,7 @@ def spliceData(keywords, fileContents):
     outputkeywords = keywords[1]
 
     allDataByArea = {}  # dict to store the data
-    currentArea= None   # string with current spot in allDataByArea
+    currentArea= "ERROR PLACE HOLDER"   # string with current spot in allDataByArea
     room_or_zone = True # true if a room file, false if a zone file
         
     # out_path = os.path.join(os.path.dirname(__file__), 'List.txt')

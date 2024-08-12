@@ -232,10 +232,10 @@ def select_file_location():
         filetypes = (("CSV files", "*.csv"), ("all files" , "*.*"))
     )
     
-    if file_path:
-        # update the global variable
-        global fetch_file_path_global
-        fetch_file_path_global = file_path
+    global fetch_file_path_global
+    fetch_file_path_global = file_path
+    
+    if fetch_file_path_global:
         # update the screen texts
         fileLabel.config(text= f"Selected File: {fetch_file_path_global}")
         statusLabel.config(text= "Converter is ready to run.")
@@ -338,7 +338,7 @@ def loadSavedKeywords():
     keywords = getKeyWords()
     keywordData = [keywords[0], keywords[1]]
     updateKeywords()
-    statusLabel.config(text = f"File Loaded")
+    statuskeywordLabel.config(text = f"File Loaded")
     
 
 def updateKeywords():
@@ -388,7 +388,7 @@ def saveKeywords():
         out_file.write(",".join(keywordData[0]) + "\n")
         out_file.write(",".join(keywordData[1]) + "\n")
     
-    statusLabel.config(text = f"Keywords saved to file.")
+    statuskeywordLabel.config(text = f"Keywords saved to file.")
     
 
 loadKeywordsButton = tk.Button(keywordButtons, text="Load Saved Keywords", command = loadSavedKeywords)
@@ -404,8 +404,8 @@ remove_column_button.grid(row=3, column=2, padx=5, pady=5)
 save_button = tk.Button(keywordButtons, text="Save Keywords", command = saveKeywords)
 save_button.grid(row=3, column=4, padx=5, pady=5)
 
-statusLabel = tk.Label(keywordsPage, text = "")
-statusLabel.grid(row=5, column=0, padx=5, pady=10)
+statuskeywordLabel = tk.Label(keywordsPage, text = "")
+statuskeywordLabel.grid(row=5, column=0, padx=5, pady=10)
 
 # run the program
 root.mainloop()
