@@ -317,35 +317,34 @@ run_on_click_button.grid(row=2, column=1, padx=5, pady=10)
 
 
 # seccond tab Keywords Page
-keywordsPageMaster = tk.Frame(programWin)
-keywordsPageMaster.grid_columnconfigure(0, weight=1) # center on page
-programWin.add(keywordsPageMaster, text="Keywords Page")
-
-scrollCanvas = tk.Canvas(root)
-h_scrollbar = tk.Scrollbar(keywordsPageMaster, orient = "horizontal", command = scrollCanvas.xview)
-scrollCanvas.configure(xscrollcommand=h_scrollbar.set)
-
-scrollCanvas.pack(side = "top", fill="both", expand=True)
-h_scrollbar.pack(side = "bottom", fill = "x")
-
-
-
-
-
-keywordsPage = tk.Frame(scrollCanvas)
-scrollCanvas.create_window((0,0), window=keywordsPage, anchor="nw")
-keywordsPage.bind("<Configure>", lambda event, canvas=scrollCanvas: on_frame_configure(scrollCanvas))
-
+keywordsPage = tk.Frame(programWin)
 keywordsPage.grid_columnconfigure(0, weight=1) # center on page
-keywordsPageMaster.add(keywordsPage, text="Keywords Page")
+programWin.add(keywordsPage, text="Keywords Page")
 
-excelChart = tk.Frame(keywordsPage)
-excelChart.grid_columnconfigure(0, weight=1) # center on page
-excelChart.grid(row=1, column=0, padx=5, pady=5)
+# scrolling code
+def on_frame_configure(canvas):
+    canvas.configure(scrollregion = canvas.bbox("all"))
+
+
+excelChartContainer = tk.Frame(keywordsPage)
+excelChartContainer.grid_columnconfigure(0, weight=1) # center on page
+excelChartContainer.grid(row=0, column=0, padx=5, pady=5)
+
+excellScrollCanvas = tk.Canvas(excelChartContainer,height=90, width=1000)
+excell_h_scrollbar = tk.Scrollbar(excelChartContainer, orient = "horizontal", command = excellScrollCanvas.xview)
+excellScrollCanvas.configure(xscrollcommand=excell_h_scrollbar.set)
+
+excellScrollCanvas.pack(side = "top", fill="both", expand=True)
+excell_h_scrollbar.pack(side = "bottom", fill = "x")
+
+
+excelChart = tk.Frame(excellScrollCanvas)
+excellScrollCanvas.create_window((0,0),window=excelChart, anchor="nw")
+excelChart.bind("<Configure>", lambda event, canvas=excellScrollCanvas: on_frame_configure(excellScrollCanvas))
 
 keywordButtons = tk.Frame(keywordsPage)
 keywordButtons.grid_columnconfigure(0, weight=1) # center on page
-keywordButtons.grid(row=3, column=0, padx=5, pady=5)
+keywordButtons.grid(row=2, column=0, padx=5, pady=5)
 
 
 
@@ -366,9 +365,17 @@ def updateKeywords():
 
     global keywordData
     for r, row in enumerate(keywordData):
+        if r == 0:
+            searchKeywordsLabel = tk.Label(excelChart, text = f"Words to search for:")
+            searchKeywordsLabel.grid(row=0, column=0,  padx=3, pady=5)
+        elif r == 1:
+            mapKeywordsLabel = tk.Label(excelChart, text = f"Map words to label:")
+            mapKeywordsLabel.grid(row=1, column=0,  padx=3, pady=5)
+
+
         for c, val in enumerate(row):
             entry = tk.Entry(excelChart, width=max(len(val), 15))  # Set initial width based on text length
-            entry.grid(row=r, column=c, padx=3, pady=3, sticky="nsew")  # Add buffer and center the text box
+            entry.grid(row=r, column=c+1, padx=3, pady=3, sticky="nsew")  # Add buffer and center the text box
             entry.insert(tk.END, val)
 
             # Bind the event to dynamically adjust width
@@ -408,22 +415,23 @@ def saveKeywords():
     
     statuskeywordLabel.config(text = f"Keywords saved to file.")
     
+buttonRowLocation = 5
 
 loadKeywordsButton = tk.Button(keywordButtons, text="Load Saved Keywords", command = loadSavedKeywords)
-loadKeywordsButton.grid(row=3, column=0, padx=5, pady=5)
+loadKeywordsButton.grid(row=buttonRowLocation, column=0, padx=5, pady=5)
 
 # Add the button to add another column
 add_column_button = tk.Button(keywordButtons, text="Add Column", command = add_column)
-add_column_button.grid(row=3, column=1, padx=5, pady=5)
+add_column_button.grid(row=buttonRowLocation, column=1, padx=5, pady=5)
 
 remove_column_button = tk.Button(keywordButtons, text="Remove Column", command = remove_column)
-remove_column_button.grid(row=3, column=2, padx=5, pady=5)
+remove_column_button.grid(row=buttonRowLocation, column=2, padx=5, pady=5)
 
 save_button = tk.Button(keywordButtons, text="Save Keywords", command = saveKeywords)
-save_button.grid(row=3, column=4, padx=5, pady=5)
+save_button.grid(row=buttonRowLocation, column=4, padx=5, pady=5)
 
 statuskeywordLabel = tk.Label(keywordsPage, text = "")
-statuskeywordLabel.grid(row=5, column=0, padx=5, pady=10)
+statuskeywordLabel.grid(row=buttonRowLocation+2, column=0, padx=5, pady=10)
 
 # run the program
 root.mainloop()
