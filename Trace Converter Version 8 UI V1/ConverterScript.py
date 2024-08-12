@@ -421,11 +421,17 @@ def updateKeywords():
             # Bind the event to dynamically adjust width
             entry.bind("<KeyRelease>", lambda event, e=entry: adjust_width(e))
 
+
 def adjust_width(entry):
-    # Adjust the width of the Entry widget based on the length of its content
+    # Adjust the width of the Entry widget and update the value in the keyword lis
     content = entry.get()
+    positionColumn = entry.grid_info()['column']
+    positionRow = entry.grid_info()['row']
+    global keywordData
+    keywordData[positionRow][positionColumn-1] = content
     new_width = max(len(content), 15)  # Ensure a minimum width
     entry.config(width=new_width)
+
 
 def add_column():
     global keywordData

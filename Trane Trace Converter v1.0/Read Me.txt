@@ -1,0 +1,3 @@
+Double click on the Trane Trace Export Converter v1.0 file, and grant permission to run. 
+If any other problems arise, send an email to jjo5541@psu.edu with the trace file you are trying to clean, a zip of the Trace Trace Export Converter program with the keywords.csv file you are using.
+Created By: Jeremiah J Ondrasik (8/12/2024)
