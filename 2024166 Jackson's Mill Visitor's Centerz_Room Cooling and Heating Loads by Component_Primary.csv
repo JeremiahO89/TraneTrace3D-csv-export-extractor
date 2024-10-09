@@ -1,0 +1,713 @@
+Report Title
+ROOM_Corridor 105,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,7/21 15:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,87.4,�F,/,71.3,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,75.0,�F,/,50.2,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,58.7,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,343
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,4.11
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,25
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,25
+Roof,,,0,"1,984",,0,,,"1,984",,31.5,Roof,,,0,"-1,699",,0,,,"-1,699",,33.1,Calculated Ventilation ACH,,0.30
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,294,513,,0,,,807,,12.8,Glass,,,-949,0,,0,,,-949,,18.5,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,80,,0,,,80,,1.3,Wall,,,0,-234,,0,,,-234,,4.6
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,"1,301",,0,,,"1,301",,20.6,Partition,,,0,"-1,940",,0,,,"-1,940",,37.8,Main Fan cfm,343
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,4.11
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0
+Slab,,,0,-215,,0,,,-215,,-3.4,Slab,,,0,-249,,0,,,-249,,4.8,Sec Fan cfm,0
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,25
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,25
+Envelope Subtotal,,,294,"3,664",,0,,,"3,958",,-,Envelope Subtotal,,,-949,"-4,122",,0,,,"-5,071",,-,Calculated Ventilation ACH,,0.30
+People,,,44,81,,104,,,229,,3.6,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,254,552,,0,,,805,,12.8,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,539,502,,0,,,"1,041",,16.5,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,836,"1,134",,104,,,"2,075",,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,0,,0,,,0,,0.0,Ceiling,,,0,0,,0,,,0,,0.0,Roof,563
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,563
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,0
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,25
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,-20,,0,,,-20,,-0.3,Time Delay Correction,,,0,-58,,0,,,-58,,1.1,Wall,96
+Grand Total,,,"1,130","4,778",,104,,,"6,012",,100.0,Grand Total,,,-949,"-4,180",,0,,,"-5,129",,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,291,0,,0,,,291,,-,RA Sensible (Lights),,,0,0,,0,,,0,,-
+,,,,,,,,,,,,,,,,,,,,,,,,Other Wall,96
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,"2,310"
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,563
+Cooling tons,,0.50,,No People(max),,,,,0.42,,,Heating Mbh,,-5.13,,No People(max),,,,,0.42,,,Other Floor,0
+%OA,,7,,People per 1000 ft�,,,,,1,,,%OA,,7,,People per 1000 ft�,,,,,1
+cfm/ft�,,0.82,,Volume (ft�),,,,,"5,010",,,cfm/ft�,,0.82,,Volume (ft�),,,,,"5,010"
+cfm/ton,,685,,,,,,,,,,cfm/Mbh,,-67
+ft�/ton,,833,,,,,,,,,,ft�/Mbh,,-81
+Btu/h-ft�,,14.41,,,,,,,,,,Btu/h-ft�,,-12.35
+ROOM_Room 100 Lobby/Flex Space,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,7/21 19:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,79.9,�F,/,69.1,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,75.0,�F,/,50.0,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,56.8,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,"1,135"
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,3.85
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,162
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,162
+Roof,,,0,0,,0,,,0,,0.0,Roof,,,0,0,,0,,,0,,0.0,Calculated Ventilation ACH,,0.55
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,"4,380","7,936",,0,,,"12,316",,48.5,Glass,,,"-16,033",0,,0,,,"-16,033",,61.8,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,635,,0,,,635,,2.5,Wall,,,0,"-1,952",,0,,,"-1,952",,7.5
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,-550,,0,,,-550,,-2.2,Partition,,,0,118,,0,,,118,,-0.5,Main Fan cfm,"1,135"
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,3.85
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0
+Slab,,,0,"1,745",,0,,,"1,745",,6.9,Slab,,,0,-280,,0,,,-280,,1.1,Sec Fan cfm,0
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,162
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,162
+Envelope Subtotal,,,"4,380","9,766",,0,,,"14,146",,-,Envelope Subtotal,,,"-16,033","-2,115",,0,,,"-18,148",,-,Calculated Ventilation ACH,,0.55
+People,,,"1,446","1,899",,"2,287",,,"5,632",,22.2,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,"1,224","1,732",,0,,,"2,955",,11.6,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,"1,904","1,182",,0,,,"3,085",,12.1,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,"4,573","4,812",,"2,287",,,"11,673",,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,"-1,464",,0,,,"-1,464",,-5.8,Ceiling,,,0,"-7,239",,0,,,"-7,239",,27.9,Roof,0
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,0
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,"1,596"
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,579
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,-352,,0,,,-352,,-1.4,Time Delay Correction,,,0,-543,,0,,,-543,,2.1,Wall,"1,234"
+Grand Total,,,"8,954","12,762",,"2,287",,,"24,003",,100.0,Grand Total,,,"-16,033","-9,897",,0,,,"-25,930",,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,"1,405",0,,0,,,"1,405",,-,RA Sensible (Lights),,,0,0,,0,,,0,,-
+,,,,,,,,,,,,,,,,,,,,,,,,Other Wall,"1,234"
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,637
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,"1,596"
+Cooling tons,,2.00,,No People(max),,,,,14.76,,,Heating Mbh,,-25.93,,No People(max),,,,,14.76,,,Other Floor,0
+%OA,,14,,People per 1000 ft�,,,,,10,,,%OA,,14,,People per 1000 ft�,,,,,10
+cfm/ft�,,0.77,,Volume (ft�),,,,,"17,711",,,cfm/ft�,,0.77,,Volume (ft�),,,,,"17,711"
+cfm/ton,,567,,,,,,,,,,cfm/Mbh,,-44
+ft�/ton,,738,,,,,,,,,,ft�/Mbh,,-57
+Btu/h-ft�,,16.26,,,,,,,,,,Btu/h-ft�,,-17.54
+ROOM_Room 101 Office,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,7/21 15:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,87.4,�F,/,71.3,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,75.0,�F,/,50.2,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,57.9,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,101
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,6.39
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,9
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,9
+Roof,,,0,0,,0,,,0,,0.0,Roof,,,0,0,,0,,,0,,0.0,Calculated Ventilation ACH,,0.57
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,416,576,,0,,,993,,48.9,Glass,,,-987,0,,0,,,-987,,56.7,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,53,,0,,,53,,2.6,Wall,,,0,-343,,0,,,-343,,19.7
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,19,,0,,,19,,1.0,Partition,,,0,53,,0,,,53,,-3.1,Main Fan cfm,101
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,6.39
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0,Sec Fan cfm
+Slab,,,0,-103,,0,,,-103,,-5.1,Slab,,,0,-48,,0,,,-48,,2.7,,0
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,9
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,9
+Envelope Subtotal,,,416,546,,0,,,962,,-,Envelope Subtotal,,,-987,-338,,0,,,"-1,325",,-,Calculated Ventilation ACH,,0.57
+People,,,55,105,,105,,,265,,13.1,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,95,209,,0,,,304,,15.0,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,136,130,,0,,,266,,13.1,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,286,444,,105,,,836,,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,143,,0,,,143,,7.0,Ceiling,,,0,-384,,0,,,-384,,22.0,Roof,0
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,0
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,138
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,40
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,-20,,0,,,-20,,-1.0,Time Delay Correction,,,0,-33,,0,,,-33,,1.9,Wall,148
+Grand Total,,,702,"1,113",,105,,,"1,921",,100.0,Grand Total,,,-987,-755,,0,,,"-1,742",,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,109,0,,0,,,109,,-,RA Sensible (Lights),,,0,0,,0,,,0,,-
+,,,,,,,,,,,,,,,,,,,,,,,,Other Wall,148
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,213
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,138
+Cooling tons,,0.16,,No People(max),,,,,0.53,,,Heating Mbh,,-1.74,,No People(max),,,,,0.53,,,Other Floor,0
+%OA,,9,,People per 1000 ft�,,,,,5,,,%OA,,9,,People per 1000 ft�,,,,,5
+cfm/ft�,,0.96,,Volume (ft�),,,,,948,,,cfm/ft�,,0.96,,Volume (ft�),,,,,948
+cfm/ton,,630,,,,,,,,,,cfm/Mbh,,-58
+ft�/ton,,658,,,,,,,,,,ft�/Mbh,,-60
+Btu/h-ft�,,18.24,,,,,,,,,,Btu/h-ft�,,-16.67
+ROOM_Room 102 Break Room,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,7/21 15:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,87.4,�F,/,71.3,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,74.9,�F,/,52.8,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,48.0,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,280
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,16.18
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,52
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,52
+Roof,,,0,0,,0,,,0,,0.0,Roof,,,0,0,,0,,,0,,0.0,Calculated Ventilation ACH,,3.00
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,556,733,,0,,,"1,290",,11.1,Glass,,,"-1,535",0,,0,,,"-1,535",,69.8,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,-129,,0,,,-129,,-1.1,Wall,,,0,-254,,0,,,-254,,11.6
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,"-1,453",,0,,,"-1,453",,-12.5,Partition,,,0,100,,0,,,100,,-4.6,Main Fan cfm,280
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,16.18
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0,Sec Fan cfm
+Slab,,,0,-541,,0,,,-541,,-4.6,Slab,,,0,-49,,0,,,-49,,2.3,,0
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,52
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,52
+Envelope Subtotal,,,556,"-1,390",,0,,,-834,,-,Envelope Subtotal,,,"-1,535",-203,,0,,,"-1,738",,-,Calculated Ventilation ACH,,3.00
+People,,,888,"1,804",,"2,115",,,"4,807",,41.2,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,78,182,,0,,,259,,2.2,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,"3,222","3,262",,"1,541",,,"8,024",,68.9,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,"4,188","5,248",,"3,655",,,"13,090",,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,-474,,0,,,-474,,-4.1,Ceiling,,,0,-394,,0,,,-394,,17.9,Roof,0
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,0
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,149
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,51
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,-218,,0,,,-218,,-1.9,Time Delay Correction,,,0,-68,,0,,,-68,,3.1,Wall,130
+Grand Total,,,"4,744","3,166",,"3,655",,,"11,565",,100.0,Grand Total,,,"-1,535",-664,,0,,,"-2,199",,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,89,0,,0,,,89,,-,RA Sensible (Lights),,,0,0,,0,,,0,,-,Other Wall,130
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,310
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,149
+Cooling tons,,0.96,,No People(max),,,,,7.71,,,Heating Mbh,,-2.20,,No People(max),,,,,7.71,,,Other Floor,0
+%OA,,19,,People per 1000 ft�,,,,,67,,,%OA,,19,,People per 1000 ft�,,,,,67
+cfm/ft�,,2.43,,Volume (ft�),,,,,"1,038",,,cfm/ft�,,2.43,,Volume (ft�),,,,,"1,038"
+cfm/ton,,291,,,,,,,,,,cfm/Mbh,,-127
+ft�/ton,,120,,,,,,,,,,ft�/Mbh,,-52
+Btu/h-ft�,,100.00,,,,,,,,,,Btu/h-ft�,,-19.23
+ROOM_Room 103 Supplies,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,7/21 15:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,87.4,�F,/,71.3,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,75.0,�F,/,50.1,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,58.9,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,89
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,7.39
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,5
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,5
+Roof,,,0,0,,0,,,0,,0.0,Roof,,,0,0,,0,,,0,,0.0,Calculated Ventilation ACH,,0.42
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,423,625,,0,,,"1,047",,66.9,Glass,,,-990,0,,0,,,-990,,64.6,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,33,,0,,,33,,2.1,Wall,,,0,-151,,0,,,-151,,9.8
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,46,,0,,,46,,3.0,Partition,,,0,-23,,0,,,-23,,1.5,Main Fan cfm,89
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,7.39
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0,Sec Fan cfm,0
+Slab,,,0,-72,,0,,,-72,,-4.6,Slab,,,0,-39,,0,,,-39,,2.6
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,5
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,5
+Envelope Subtotal,,,423,632,,0,,,"1,055",,-,Envelope Subtotal,,,-990,-213,,0,,,"-1,203",,-,Calculated Ventilation ACH,,0.42
+People,,,0,0,,0,,,0,,0.0,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,47,107,,0,,,153,,9.8,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,103,103,,0,,,207,,13.2,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,150,210,,0,,,360,,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,110,,0,,,110,,7.0,Ceiling,,,0,-295,,0,,,-295,,19.3,Roof,0
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,0
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,109
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,40
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,-12,,0,,,-12,,-0.8,Time Delay Correction,,,0,-34,,0,,,-34,,2.2,Wall,87
+Grand Total,,,573,940,,0,,,"1,513",,100.0,Grand Total,,,-990,-542,,0,,,"-1,532",,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,53,0,,0,,,53,,-,RA Sensible (Lights),,,0,0,,0,,,0,,-,Other Wall,87
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,290
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,109
+Cooling tons,,0.13,,No People(max),,,,,0.00,,,Heating Mbh,,-1.53,,No People(max),,,,,0.00,,,Other Floor,0
+%OA,,5,,People per 1000 ft�,,,,,0,,,%OA,,5,,People per 1000 ft�,,,,,0
+cfm/ft�,,1.11,,Volume (ft�),,,,,722,,,cfm/ft�,,1.11,,Volume (ft�),,,,,722
+cfm/ton,,708,,,,,,,,,,cfm/Mbh,,-58
+ft�/ton,,636,,,,,,,,,,ft�/Mbh,,-52
+Btu/h-ft�,,18.87,,,,,,,,,,Btu/h-ft�,,-19.23
+ROOM_Room 104 Director's Office,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,7/21 10:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,80.1,�F,/,69.2,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,75.0,�F,/,50.2,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,58.4,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,246
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,13.12
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,11
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,11
+Roof,,,0,0,,0,,,0,,0.0,Roof,,,0,0,,0,,,0,,0.0,Calculated Ventilation ACH,,0.59
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,"1,387","3,780",,0,,,"5,167",,113.6,Glass,,,"-2,397",0,,0,,,"-2,397",,75.8,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,97,,0,,,97,,2.1,Wall,,,0,-408,,0,,,-408,,12.9
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,-591,,0,,,-591,,-13.0,Partition,,,0,202,,0,,,202,,-6.4,Main Fan cfm,246
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,13.12
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0
+Slab,,,0,-781,,0,,,-781,,-17.2,Slab,,,0,-41,,0,,,-41,,1.3,Sec Fan cfm,0
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,11
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,11
+Envelope Subtotal,,,"1,387","2,505",,0,,,"3,892",,-,Envelope Subtotal,,,"-2,397",-247,,0,,,"-2,645",,-,Calculated Ventilation ACH,,0.59
+People,,,66,103,,125,,,294,,6.5,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,113,230,,0,,,343,,7.5,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,161,144,,0,,,305,,6.7,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,340,477,,125,,,942,,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,-354,,0,,,-354,,-7.8,Ceiling,,,0,-446,,0,,,-446,,14.1,Roof,0
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,0
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,160
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,100
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,-61,,0,,,-61,,-1.3,Time Delay Correction,,,0,-73,,0,,,-73,,2.3,Wall,229
+Grand Total,,,"1,727","2,567",,125,,,"4,419",,100.0,Grand Total,,,"-2,397",-766,,0,,,"-3,163",,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,130,0,,0,,,130,,-,RA Sensible (Lights),,,0,0,,0,,,0,,-
+,,,,,,,,,,,,,,,,,,,,,,,,Other Wall,229
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,229
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,160
+Cooling tons,,0.37,,No People(max),,,,,0.62,,,Heating Mbh,,-3.16,,No People(max),,,,,0.62,,,Other Floor,0
+%OA,,4,,People per 1000 ft�,,,,,5,,,%OA,,4,,People per 1000 ft�,,,,,5
+cfm/ft�,,1.97,,Volume (ft�),,,,,"1,125",,,cfm/ft�,,1.97,,Volume (ft�),,,,,"1,125"
+cfm/ton,,668,,,,,,,,,,cfm/Mbh,,-78
+ft�/ton,,339,,,,,,,,,,ft�/Mbh,,-40
+Btu/h-ft�,,35.40,,,,,,,,,,Btu/h-ft�,,-25.00
+ROOM_Room 105A Closet,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,9/21 15:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,81.6,�F,/,66.4,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,75.0,�F,/,50.2,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,64.9,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,10
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,40.54
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,0
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,0
+Roof,,,0,0,,0,,,0,,0.0,Roof,,,0,0,,0,,,0,,0.0,Calculated Ventilation ACH,,0.00
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,0,0,,0,,,0,,0.0,Glass,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,0,,0,,,0,,0.0,Wall,,,0,0,,0,,,0,,0.0
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,75,,0,,,75,,72.0,Partition,,,0,-65,,0,,,-65,,78.4,Main Fan cfm,10
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,40.54
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0
+Slab,,,0,-1,,0,,,-1,,-0.9,Slab,,,0,-5,,0,,,-5,,6.5,Sec Fan cfm,0
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,0
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,0
+Envelope Subtotal,,,0,74,,0,,,74,,-,Envelope Subtotal,,,0,-71,,0,,,-71,,-,Calculated Ventilation ACH,,0.00
+People,,,0,0,,0,,,0,,0.0,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,1,9,,0,,,10,,9.7,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,2,9,,0,,,11,,10.4,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,3,18,,0,,,21,,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,8,,0,,,8,,7.8,Ceiling,,,0,-13,,0,,,-13,,15.1,Roof,0
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,0
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,10
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,0
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,0,,0,,,0,,0.0,Time Delay Correction,,,0,0,,0,,,0,,0.0,Wall,0
+Grand Total,,,3,100,,0,,,103,,100.0,Grand Total,,,0,-83,,0,,,-83,,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,1,0,,0,,,1,,-,RA Sensible (Lights),,,0,0,,0,,,0,,-
+,,,,,,,,,,,,,,,,,,,,,,,,Other Wall,0
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,132
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,10
+Cooling tons,,0.01,,No People(max),,,,,0.00,,,Heating Mbh,,-0.08,,No People(max),,,,,0.00,,,Other Floor,0
+%OA,,0,,People per 1000 ft�,,,,,0,,,%OA,,0,,People per 1000 ft�,,,,,0
+cfm/ft�,,6.00,,Volume (ft�),,,,,15,,,cfm/ft�,,6.00,,Volume (ft�),,,,,15
+cfm/ton,,"1,125",,,,,,,,,,cfm/Mbh,,-116
+ft�/ton,,187,,,,,,,,,,ft�/Mbh,,-19
+Btu/h-ft�,,64.17,,,,,,,,,,Btu/h-ft�,,-52.63
+ROOM_Room 106 Staff Office,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,9/21 11:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,77.1,�F,/,65.0,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,75.0,�F,/,50.1,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,58.5,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,275
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,18.25
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,9
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,9
+Roof,,,0,0,,0,,,0,,0.0,Roof,,,0,0,,0,,,0,,0.0,Calculated Ventilation ACH,,0.60
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,"1,584","4,549",,0,,,"6,133",,123.3,Glass,,,"-1,998",0,,0,,,"-1,998",,75.9,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,145,,0,,,145,,2.9,Wall,,,0,-402,,0,,,-402,,15.3
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,-701,,0,,,-701,,-14.1,Partition,,,0,194,,0,,,194,,-7.4,Main Fan cfm,275
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,18.25
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0
+Slab,,,0,-994,,0,,,-994,,-20.0,Slab,,,0,-36,,0,,,-36,,1.4,Sec Fan cfm,0
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,9
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,9
+Envelope Subtotal,,,"1,584","2,999",,0,,,"4,583",,-,Envelope Subtotal,,,"-1,998",-243,,0,,,"-2,241",,-,Calculated Ventilation ACH,,0.60
+People,,,53,88,,100,,,241,,4.9,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,91,185,,0,,,275,,5.5,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,130,116,,0,,,245,,4.9,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,273,388,,100,,,762,,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,-413,,0,,,-413,,-8.3,Ceiling,,,0,-328,,0,,,-328,,12.4,Roof,0
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,0
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,132
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,80
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,-62,,0,,,-62,,-1.3,Time Delay Correction,,,0,-64,,0,,,-64,,2.4,Wall,207
+Grand Total,,,"1,857","2,912",,100,,,"4,870",,100.0,Grand Total,,,"-1,998",-635,,0,,,"-2,633",,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,104,0,,0,,,104,,-,RA Sensible (Lights),,,0,0,,0,,,0,,-
+,,,,,,,,,,,,,,,,,,,,,,,,Other Wall,207
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,207
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,132
+Cooling tons,,0.41,,No People(max),,,,,0.50,,,Heating Mbh,,-2.63,,No People(max),,,,,0.50,,,Other Floor,0
+%OA,,3,,People per 1000 ft�,,,,,5,,,%OA,,3,,People per 1000 ft�,,,,,5
+cfm/ft�,,2.74,,Volume (ft�),,,,,904,,,cfm/ft�,,2.74,,Volume (ft�),,,,,904
+cfm/ton,,678,,,,,,,,,,cfm/Mbh,,-104
+ft�/ton,,247,,,,,,,,,,ft�/Mbh,,-38
+Btu/h-ft�,,48.58,,,,,,,,,,Btu/h-ft�,,-26.32
+ROOM_Room 107 Elec/HVAC,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,10/21 14:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,73.4,�F,/,60.1,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,75.0,�F,/,50.1,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,65.0,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,252
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,11.04
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,0
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,0
+Roof,,,0,292,,0,,,292,,10.8,Roof,,,0,-447,,0,,,-447,,26.9,Calculated Ventilation ACH,,0.00
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,461,"1,662",,0,,,"2,123",,78.2,Glass,,,-569,0,,0,,,-569,,34.2,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,411,,0,,,411,,15.1,Wall,,,0,-445,,0,,,-445,,26.8
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,-206,,0,,,-206,,-7.6,Partition,,,0,-115,,0,,,-115,,6.9,Main Fan cfm,252
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,11.04
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0,Sec Fan cfm
+Slab,,,0,-315,,0,,,-315,,-11.6,Slab,,,0,-62,,0,,,-62,,3.7,,0
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,0
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,0
+Envelope Subtotal,,,461,"1,845",,0,,,"2,306",,-,Envelope Subtotal,,,-569,"-1,069",,0,,,"-1,639",,-,Calculated Ventilation ACH,,0.00
+People,,,0,0,,0,,,0,,0.0,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,44,77,,0,,,121,,4.4,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,147,110,,0,,,257,,9.5,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,191,187,,0,,,378,,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,0,,0,,,0,,0.0,Ceiling,,,0,0,,0,,,0,,0.0,Roof,149
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,149
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,0
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,20
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,-19,,0,,,-19,,-0.7,Time Delay Correction,,,0,-25,,0,,,-25,,1.5,Wall,156
+Grand Total,,,652,"2,013",,0,,,"2,665",,100.0,Grand Total,,,-569,"-1,094",,0,,,"-1,664",,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,51,0,,0,,,51,,-,RA Sensible (Lights),,,0,0,,0,,,0,,-
+,,,,,,,,,,,,,,,,,,,,,,,,Other Wall,156
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,450
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,149
+Cooling tons,,0.22,,No People(max),,,,,0.00,,,Heating Mbh,,-1.66,,No People(max),,,,,0.00,,,Other Floor,0
+%OA,,0,,People per 1000 ft�,,,,,0,,,%OA,,0,,People per 1000 ft�,,,,,0
+cfm/ft�,,2.21,,Volume (ft�),,,,,"1,369",,,cfm/ft�,,2.21,,Volume (ft�),,,,,"1,369"
+cfm/ton,,"1,133",,,,,,,,,,cfm/Mbh,,-151
+ft�/ton,,514,,,,,,,,,,ft�/Mbh,,-69
+Btu/h-ft�,,23.35,,,,,,,,,,Btu/h-ft�,,-14.49
+ROOM_Room 108 Restroom,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,7/21 16:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,86.3,�F,/,70.9,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,75.0,�F,/,50.1,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,58.6,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,25
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,3.58
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,0
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,0
+Roof,,,0,0,,0,,,0,,0.0,Roof,,,0,0,,0,,,0,,0.0,Calculated Ventilation ACH,,0.00
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,0,0,,0,,,0,,0.0,Glass,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,0,,0,,,0,,0.0,Wall,,,0,0,,0,,,0,,0.0
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,74,,0,,,74,,15.4,Partition,,,0,-107,,0,,,-107,,40.1,Main Fan cfm,25
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,3.58
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0,Sec Fan cfm
+Slab,,,0,-9,,0,,,-9,,-1.8,Slab,,,0,-37,,0,,,-37,,13.7,,0
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,0
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,0
+Envelope Subtotal,,,0,66,,0,,,66,,-,Envelope Subtotal,,,0,-144,,0,,,-144,,-,Calculated Ventilation ACH,,0.00
+People,,,5,9,,7,,,21,,4.4,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,42,90,,0,,,132,,27.4,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,60,55,,0,,,115,,23.9,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,107,155,,7,,,269,,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,100,,0,,,100,,20.8,Ceiling,,,0,-123,,0,,,-123,,46.1,Roof,0
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,0
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,71
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,0
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,0,,0,,,0,,-0.1,Time Delay Correction,,,0,0,,0,,,0,,0.1,Wall,0
+Grand Total,,,107,321,,7,,,434,,100.0,Grand Total,,,0,-268,,0,,,-268,,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,48,0,,0,,,48,,-,RA Sensible (Lights),,,0,0,,0,,,0,,-,Other Wall,0
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,323
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,71
+Cooling tons,,0.04,,No People(max),,,,,0.05,,,Heating Mbh,,-0.27,,No People(max),,,,,0.05,,,Other Floor,0
+%OA,,0,,People per 1000 ft�,,,,,1,,,%OA,,0,,People per 1000 ft�,,,,,1
+cfm/ft�,,0.53,,Volume (ft�),,,,,418,,,cfm/ft�,,0.53,,Volume (ft�),,,,,418
+cfm/ton,,683,,,,,,,,,,cfm/Mbh,,-92
+ft�/ton,,"1,285",,,,,,,,,,ft�/Mbh,,-174
+Btu/h-ft�,,9.34,,,,,,,,,,Btu/h-ft�,,-5.75
+ROOM_Room 109 Restroom,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,7/21 16:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,86.3,�F,/,70.9,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,75.0,�F,/,50.1,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,58.6,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,25
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,3.40
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,0
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,0
+Roof,,,0,0,,0,,,0,,0.0,Roof,,,0,0,,0,,,0,,0.0,Calculated Ventilation ACH,,0.00
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,0,0,,0,,,0,,0.0,Glass,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,0,,0,,,0,,0.0,Wall,,,0,0,,0,,,0,,0.0
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,64,,0,,,64,,13.0,Partition,,,0,-106,,0,,,-106,,39.0,Main Fan cfm,25
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,3.40
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0,Sec Fan cfm,0
+Slab,,,0,-10,,0,,,-10,,-2.0,Slab,,,0,-38,,0,,,-38,,14.2
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,0
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,0
+Envelope Subtotal,,,0,54,,0,,,54,,-,Envelope Subtotal,,,0,-144,,0,,,-144,,-,Calculated Ventilation ACH,,0.00
+People,,,5,10,,8,,,22,,4.5,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,44,96,,0,,,141,,28.5,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,63,59,,0,,,122,,24.8,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,112,165,,8,,,285,,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,103,,0,,,103,,20.9,Ceiling,,,0,-127,,0,,,-127,,46.7,Roof,0
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,0
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,74
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,0
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,0,,0,,,0,,-0.1,Time Delay Correction,,,0,0,,0,,,0,,0.1,Wall,0
+Grand Total,,,112,322,,8,,,443,,100.0,Grand Total,,,0,-271,,0,,,-271,,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,51,0,,0,,,51,,-,RA Sensible (Lights),,,0,0,,0,,,0,,-,Other Wall,0
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,329
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,74
+Cooling tons,,0.04,,No People(max),,,,,0.05,,,Heating Mbh,,-0.27,,No People(max),,,,,0.05,,,Other Floor,0
+%OA,,0,,People per 1000 ft�,,,,,1,,,%OA,,0,,People per 1000 ft�,,,,,1
+cfm/ft�,,0.51,,Volume (ft�),,,,,442,,,cfm/ft�,,0.51,,Volume (ft�),,,,,442
+cfm/ton,,682,,,,,,,,,,cfm/Mbh,,-93
+ft�/ton,,"1,331",,,,,,,,,,ft�/Mbh,,-181
+Btu/h-ft�,,9.02,,,,,,,,,,Btu/h-ft�,,-5.52
+ROOM_Room 110 Storage,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,7/21 14:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,87.4,�F,/,71.3,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,75.0,�F,/,50.0,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,58.7,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,97
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,3.05
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,10
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,10
+Roof,,,0,724,,0,,,724,,41.1,Roof,,,0,-608,,0,,,-608,,45.7,Calculated Ventilation ACH,,0.31
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,0,0,,0,,,0,,0.0,Glass,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,228,,0,,,228,,13.0,Wall,,,0,-430,,0,,,-430,,32.3
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,115,,0,,,115,,6.5,Partition,,,0,-198,,0,,,-198,,14.8,Main Fan cfm,97
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,3.05
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0
+Slab,,,0,-10,,0,,,-10,,-0.6,Slab,,,0,-92,,0,,,-92,,6.9,Sec Fan cfm,0
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,10
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,10
+Envelope Subtotal,,,0,"1,057",,0,,,"1,057",,-,Envelope Subtotal,,,0,"-1,328",,0,,,"-1,328",,-,Calculated Ventilation ACH,,0.31
+People,,,0,0,,0,,,0,,0.0,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,92,155,,0,,,247,,14.1,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,205,148,,0,,,353,,20.1,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,297,303,,0,,,600,,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,0,,0,,,0,,0.0,Ceiling,,,0,0,,0,,,0,,0.0,Roof,200
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,200
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,0
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,0
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,-4,,0,,,-4,,-0.2,Time Delay Correction,,,0,-3,,0,,,-3,,0.2,Wall,129
+Grand Total,,,297,"1,356",,0,,,"1,653",,100.0,Grand Total,,,0,"-1,331",,0,,,"-1,331",,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,106,0,,0,,,106,,-,RA Sensible (Lights),,,0,0,,0,,,0,,-
+,,,,,,,,,,,,,,,,,,,,,,,,Other Wall,129
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,575
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,200
+Cooling tons,,0.14,,No People(max),,,,,0.00,,,Heating Mbh,,-1.33,,No People(max),,,,,0.00,,,Other Floor,0
+%OA,,10,,People per 1000 ft�,,,,,0,,,%OA,,10,,People per 1000 ft�,,,,,0
+cfm/ft�,,0.61,,Volume (ft�),,,,,"1,907",,,cfm/ft�,,0.61,,Volume (ft�),,,,,"1,907"
+cfm/ton,,701,,,,,,,,,,cfm/Mbh,,-73
+ft�/ton,,"1,154",,,,,,,,,,ft�/Mbh,,-119
+Btu/h-ft�,,10.40,,,,,,,,,,Btu/h-ft�,,-8.40
+ROOM_Room 111 Office,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,8/21 10:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,79.2,�F,/,68.3,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,75.0,�F,/,50.1,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,58.5,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,216
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,15.35
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,8
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,8
+Roof,,,0,0,,0,,,0,,0.0,Roof,,,0,0,,0,,,0,,0.0,Calculated Ventilation ACH,,0.57
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,"1,203","3,501",,0,,,"4,704",,119.0,Glass,,,"-1,516",0,,0,,,"-1,516",,66.5,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,118,,0,,,118,,3.0,Wall,,,0,-462,,0,,,-462,,20.3
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,-604,,0,,,-604,,-15.3,Partition,,,0,143,,0,,,143,,-6.3,Main Fan cfm,216
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,15.35
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0
+Slab,,,0,-709,,0,,,-709,,-17.9,Slab,,,0,-38,,0,,,-38,,1.7,Sec Fan cfm,0
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,8
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,8
+Envelope Subtotal,,,"1,203","2,306",,0,,,"3,509",,-,Envelope Subtotal,,,"-1,516",-357,,0,,,"-1,873",,-,Calculated Ventilation ACH,,0.57
+People,,,49,80,,94,,,224,,5.7,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,85,182,,0,,,266,,6.7,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,121,113,,0,,,234,,5.9,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,255,375,,94,,,724,,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,-324,,0,,,-324,,-8.2,Ceiling,,,0,-354,,0,,,-354,,15.6,Roof,0
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,0
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,125
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,60
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,-53,,0,,,-53,,-1.3,Time Delay Correction,,,0,-51,,0,,,-51,,2.2,Wall,206
+Grand Total,,,"1,458","2,304",,94,,,"3,856",,100.0,Grand Total,,,"-1,516",-762,,0,,,"-2,278",,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,97,0,,0,,,97,,-,RA Sensible (Lights),,,0,0,,0,,,0,,-
+,,,,,,,,,,,,,,,,,,,,,,,,Other Wall,206
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,206
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,125
+Cooling tons,,0.32,,No People(max),,,,,0.47,,,Heating Mbh,,-2.28,,No People(max),,,,,0.47,,,Other Floor,0
+%OA,,4,,People per 1000 ft�,,,,,5,,,%OA,,4,,People per 1000 ft�,,,,,5
+cfm/ft�,,2.30,,Volume (ft�),,,,,844,,,cfm/ft�,,2.30,,Volume (ft�),,,,,844
+cfm/ton,,672,,,,,,,,,,cfm/Mbh,,-95
+ft�/ton,,292,,,,,,,,,,ft�/Mbh,,-41
+Btu/h-ft�,,41.10,,,,,,,,,,Btu/h-ft�,,-24.39
+ROOM_Room 112 Office,,,,,,,,,,,,,,
+Conditions at Time of Space Cooling Peak,,,,,,,,,,,,Conditions at Time of Space Heating Peak
+,Peak Time (Mo/D/H:M),,,12/21 16:00:00,,,,,,,,,Peak Time (Mo/D/H:M),,,1/21 24:00:00
+,Outside,DB / WB / HR,,56.2,�F,/,49.0,�F,/,0.0,gr/lb,,Outside,DB / WB / HR,,7.4,�F,/,5.2,�F,/,0.0,gr/lb
+,Room,DB / RH / HR,,75.0,�F,/,50.4,%,/,0.0,gr/lb,,Room,DB / RH / HR,,70.0,�F,/,4.5,%,/,0.0,gr/lb
+,Supply Air Dry Bulb Temp,,,61.8,�F,,,,,,,,Supply Air Dry Bulb Temp,,,95.0,�F,,,,,,,Cooling Airflows
+,,,,,,,,,,,,,,,,,,,,,,,,Main Fan cfm,128
+,,,,Time,,,,,,,Percent,,,,,Time,,,,,,,Percent,Cooling ACH,9.99
+,,,Instant,Delay,,,,,,,of,,,,Instant,Delay,,,,,,,of,Sec Fan cfm,0
+,,,Sensible,Sensible,,Latent,,,Total,,Total,,,,Sensible,Sensible,,Latent,,,Total,,Total,Input Ventilation cfm,7
+,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),,,,(Btu/h),(Btu/h),,(Btu/h),,,(Btu/h),,(%),Calculated Ventilation cfm,,7
+Roof,,,0,0,,0,,,0,,0.0,Roof,,,0,0,,0,,,0,,0.0,Calculated Ventilation ACH,,0.55
+Other Roof,,,0,0,,0,,,0,,0.0,Other Roof,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Glass,,,267,"2,216",,0,,,"2,483",,126.9,Glass,,,"-1,017",0,,0,,,"-1,017",,66.7,Min Stop/RH (%),N/A
+Door,,,0,0,,0,,,0,,0.0,Door,,,0,0,,0,,,0,,0.0,Ventilation Sizing Factor,,1.00
+Wall,,,0,73,,0,,,73,,3.7,Wall,,,0,-217,,0,,,-217,,14.2
+Below-Grade Wall,,,0,0,,0,,,0,,0.0,Below-Grade Wall,,,0,0,,0,,,0,,0.0
+Other Wall,,,0,0,,0,,,0,,0.0,Other Wall,,,0,0,,0,,,0,,0.0,Heating Airflows
+Partition,,,0,-391,,0,,,-391,,-20.0,Partition,,,0,58,,0,,,58,,-3.8,Main Fan cfm,128
+Exterior Floor,,,0,0,,0,,,0,,0.0,Exterior Floor,,,0,0,,0,,,0,,0.0,Heating ACH,9.99
+Interior Floor,,,0,0,,0,,,0,,0.0,Interior Floor,,,0,0,,0,,,0,,0.0,Sec Fan cfm
+Slab,,,0,-705,,0,,,-705,,-36.0,Slab,,,0,-42,,0,,,-42,,2.8,,0
+Other Floor,,,0,0,,0,,,0,,0.0,Other Floor,,,0,0,,0,,,0,,0.0,Input Ventilation cfm,7
+Infiltration,,,0,0,,0,,,0,,0.0,Infiltration,,,0,0,,0,,,0,,0.0,Calculated Ventilation cfm,,7
+Envelope Subtotal,,,267,"1,193",,0,,,"1,460",,-,Envelope Subtotal,,,"-1,017",-202,,0,,,"-1,219",,-,Calculated Ventilation ACH,,0.55
+People,,,45,84,,85,,,214,,10.9,People,,,0,0,,0,,,0,,0.0,Infiltration cfm,0
+Lights,,,77,165,,0,,,242,,12.4,Lights,,,0,0,,0,,,0,,0.0,Min Stop/RH (%),N/A
+Miscellaneous Loads,,,110,102,,0,,,212,,10.9,Miscellaneous Loads,,,0,0,,0,,,0,,0.0
+Internal Subtotal,,,232,351,,85,,,669,,-,Internal Subtotal,,,0,0,,0,,,0,,-,Areas
+RA (All Other),,,0,0,,0,,,0,,0.0,RA (All Other),,,0,0,,0,,,0,,0.0
+DOA Direct to Room,,,0,0,,0,,,0,,0.0,DOA Direct to Room,,,0,0,,0,,,0,,0.0, ft�
+Ceiling,,,0,-242,,0,,,-242,,-12.3,Ceiling,,,0,-271,,0,,,-271,,17.8,Roof,0
+Refrigeration,,,0,0,,0,,,0,,0.0,Refrigeration,,,0,0,,0,,,0,,0.0,Other Roof,0
+Service Water,,,0,0,,0,,,0,,0.0,Service Water,,,0,0,,0,,,0,,0.0,Ceiling,115
+HVAC Equipment Losses,,,0,0,,0,,,0,,0.0,HVAC Equipment Losses,,,0,0,,0,,,0,,0.0
+Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Adj Air Transfer Heat,,,0,0,,0,,,0,,0.0,Window,40
+Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Sizing Factor Correction,,,0,0,,0,,,0,,0.0,Door,0
+Time Delay Correction,,,0,-19,,0,,,-19,,-1.0,Time Delay Correction,,,0,-36,,0,,,-36,,2.4,Wall,108
+Grand Total,,,499,"1,284",,85,,,"1,868",,100.0,Grand Total,,,"-1,017",-509,,0,,,"-1,526",,100.0,Below-Grade Wall,0
+RA Sensible (Lights),,,88,0,,0,,,88,,-,RA Sensible (Lights),,,0,0,,0,,,0,,-
+,,,,,,,,,,,,,,,,,,,,,,,,Other Wall,108
+,,,,,,,,,,,,,,,,,,,,,,,,Partition,280
+,,,,,,,,,,,,,,,,,,,,,,,,Exterior Floor,0
+Engineering Checks For Cooling,,,,,,,,,,,,Engineering Checks For Heating,,,,,,,,,,,,Internal Floor,0
+,,,,,,,,,,,,,,,,,,,,,,,,Slab,115
+Cooling tons,,0.16,,No People(max),,,,,0.43,,,Heating Mbh,,-1.53,,No People(max),,,,,0.43,,,Other Floor,0
+%OA,,6,,People per 1000 ft�,,,,,5,,,%OA,,6,,People per 1000 ft�,,,,,5
+cfm/ft�,,1.50,,Volume (ft�),,,,,768,,,cfm/ft�,,1.50,,Volume (ft�),,,,,768
+cfm/ton,,822,,,,,,,,,,cfm/Mbh,,-84
+ft�/ton,,548,,,,,,,,,,ft�/Mbh,,-56
+Btu/h-ft�,,21.90,,,,,,,,,,Btu/h-ft�,,-17.86
+Alternative: Primary,,,,,,,,,,,,,,,,,,,,,,"Calculated at: Oct 09, 2024 - 08:06 AM"
+File:,2024166 Jackson's Mill Visitor's Center.mdf,,,,,,,,,,,TRACE 3D Plus 6.20,,,,,,,,,,,,248,Page 1 of 1
